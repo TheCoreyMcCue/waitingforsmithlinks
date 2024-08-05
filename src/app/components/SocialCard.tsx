@@ -1,10 +1,10 @@
 // components/SocialCard.tsx
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface SocialCardProps {
-  icon: string; // URL of the icon image
+  icon: string | StaticImageData; // URL of the icon image
   link: string; // URL of the social media or external link
   alt: string; // Alt text for the icon image
   platform: string; // Platform name
